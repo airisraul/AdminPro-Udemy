@@ -13,16 +13,22 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 
 
+//Temporal luego lo quitamos
+import { FormsModule } from '@angular/forms';
+//import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,    
-    RegisterComponent
+    RegisterComponent   
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
